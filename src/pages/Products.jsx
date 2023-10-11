@@ -11,12 +11,6 @@ const Products = () => {
   const brands = ['gucci', 'adidas'];
   const [prod, setProd] = useState([]);
 
-  const [filters, setFilters] = useState({
-    brand: "",
-    price: [],
-    rating: null,
-  })
-
   useEffect(() => {
     const products = [];
     for (let i = 0; i < 8; i++) {
@@ -37,7 +31,6 @@ const Products = () => {
         image
       });
     }
-    // prod = [...products];
     setProd(products);
     SetAllProd(products);
     console.log(allProd);
@@ -45,14 +38,6 @@ const Products = () => {
 
 
   const handleBrandFilter = (brand) => {
-    // const updatedBrands = [...filters.brand];
-    // if (updatedBrands.includes(brand)) {
-    //   updatedBrands.splice(updatedBrands.indexOf(brand), 1);
-    // } else {
-    //   updatedBrands.push(brand);
-    // }
-    // setFilters({ ...filters, brand: updatedBrands });
-    // allProd = prod;
     console.log(prod)
     const filterd = prod.filter(item => item.brand === brand)
     SetAllProd([...filterd]);
