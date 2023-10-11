@@ -1,0 +1,47 @@
+.productsContainer{
+    background-color: #fff;
+    background-image: none;
+}
+
+.productBox{
+    width: 100vw;
+}
+
+.products{
+    width: 75%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productBox > .filters{
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    
+    & .type{
+        display: flex;
+        flex-direction: column;
+        margin: 5% 4%;
+
+        & .heading{
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        
+        & div {
+            padding: 5px 0;
+
+            & .cat{
+                color: #877474;
+                margin-left: 5px;
+            }
+            
+        }
+    }
+}
+
+.rating{
+    color: yellow;
+}

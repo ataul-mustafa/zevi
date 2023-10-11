@@ -1,0 +1,59 @@
+.productsContainer{
+    width: 21%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font-family: DM Sans;
+    margin: 10px 0;
+
+    & .icon{
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    & img{
+        height: 70%;
+    }
+
+    & h3{
+        font-size: 1rem;
+        color: rgb(63, 56, 56);
+    }
+
+    & div{
+        display: flex;
+
+        & .price{
+            color: rgb(151, 138, 138);
+            text-decoration: line-through;
+        }
+    }
+
+    
+    & div > .priceW{
+        text-decoration: none;
+        color: blue;
+        font-weight: 600;
+        margin-left: 5px;
+    }
+
+    & .view{
+        width: 100%;
+        background-color: rgba(128, 0, 255, 0.3);
+        color: #fff;
+        text-align: center;
+        padding: 5px 0;
+        position: absolute;
+        bottom: 30%;
+    }
+
+    & .uView{
+        display: none;
+    }
+
+   
+
+}
