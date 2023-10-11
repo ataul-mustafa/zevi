@@ -8,7 +8,6 @@ import './Products.scss'
 
 const Products = () => {
   const [allProd, SetAllProd] = useState([]);
-  const brands = ['gucci', 'adidas'];
   const [prod, setProd] = useState([]);
 
   useEffect(() => {
@@ -18,7 +17,7 @@ const Products = () => {
       const productPrice = faker.commerce.price();
       const productDescription = faker.commerce.productDescription();
       const productRating = Math.floor(Math.random() * 5) + 1; // Generates a random rating between 1 and 5
-      const brandName = i % 2 === 0 ? brands[1] : brands[0]; // Generate a random company name
+      const brandName = i % 2 === 0 ? 'adidas' : 'gucci'; // Generate a random company name
       const image = images[i];
 
       products.push({
@@ -33,7 +32,6 @@ const Products = () => {
     }
     setProd(products);
     SetAllProd(products);
-    console.log(allProd);
   }, []);
 
 
